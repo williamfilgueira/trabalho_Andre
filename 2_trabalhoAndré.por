@@ -19,8 +19,8 @@ seja fazer novo cálculo ou sair caso a escolha seja encerrar o programa.*/
 			escreva("Digite o segundo número: ")
 			leia(n2)
 			escreva("ESCOLHA NÚMERO COM A OPERAÇÃO MATEMÁTICA DESEJADA\n")
+			escreva(" 1 ( + ) | 2 ( - ) | 3 ( * ) | 4 ( / ) \n")
 			escreva("****************************\n")
-			escreva(" 1(+) | 2(-) | 3(*) | 4(/) \n")
 			leia(operador)
 			//inicio das condições.
 			escolha(operador){
@@ -43,7 +43,7 @@ seja fazer novo cálculo ou sair caso a escolha seja encerrar o programa.*/
 				caso contrario:
 					escreva("")
 			}
-			escreva("\nDeseja realizar uma nova operação? SIM(1) NÃO(0)")
+			escreva("\nDeseja realizar uma nova operação? ( 1 )SIM ( 0 )NÃO")
 			leia(getResp)
 		}//fim do laço de repetição
 		enquanto(getResp == 1)
@@ -72,8 +72,8 @@ seja fazer novo cálculo ou sair caso a escolha seja encerrar o programa.*/
 	}
 	//divisão
 	funcao inteiro dividir(inteiro n1, inteiro n2){
-		inteiro resultado
-		resultado = n1 / n2 
+		inteiro resultado = 0
+		resultado += n1 / n2 
 		retorne resultado
 	}
 }
@@ -82,7 +82,7 @@ seja fazer novo cálculo ou sair caso a escolha seja encerrar o programa.*/
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1180; 
+ * @POSICAO-CURSOR = 1363; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

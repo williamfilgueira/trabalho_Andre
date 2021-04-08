@@ -1,5 +1,5 @@
 programa
-{/*3. Escreva um programa que leia 10 nomes de alunos e duas notas de avaliações para cada aluno.
+{/*3. Escreva um programa que leia 10 nomes de alunos e duas notas de avaliações para cada aluno.
 
 Calcule e escreva a média de cada aluno,
 seguido da informação se foi aprovado ou reprovado.
@@ -7,17 +7,17 @@ Considere como média para aprovação 6. Dica: Utilize quantos vetores precisar
 de tal P1= 8.0, P2=6.0, Media=7.0, aprovado!*/
 	
 	funcao inicio()
-	{	//inicio variáveis
+	{	//inicio variáveis
 		const inteiro linha = 5
-		cadeia nome[linha]
-		real  matriz[linha][2], media = 0
+		cadeia nome[linha] //incio do vetor nome atribuindo linha como parâmetro
+		real  matriz[linha][2], media = 0 //incio da matriz atribuindo linha como parâmetro na possição 2
 		
 
-		escreva("********* EXERCICIO 3 *********")
+		escreva("********* EXERCICIO 3 *********") //estética
 		escreva("\n************************************")
 
 		//INICIO LAÇO DE REPETIÇÃO
-		para(inteiro contador = 0; contador < linha; contador++){
+		para(inteiro contador = 0; contador < linha; contador++){ 
 			escreva("\nDigite o nome do aluno: ")
 			leia(nome[contador])
 			escreva("\n************************************")	
@@ -35,12 +35,12 @@ de tal P1= 8.0, P2=6.0, Media=7.0, aprovado!*/
 			//CONDIÇÃO PARA SABER SE FOI OU NÃO APROVADO
 			
 			se(media > 6){
-				escreva("\nAluno: "+nome[contador] + "\n" + "Nota1:" + matriz[contador][0] + "\n"
-			+ "Nota2: "+ matriz[contador][1] + "\nSua média foi: " + media + " APROVADO'"  )
+				escreva("\n\nAluno: "+nome[contador] + "\n" + "Nota1:" + matriz[contador][0] + "\n"
+			+ "Nota2: "+ matriz[contador][1] + "\n\nSua média foi: " + media + "-{ APROVADO }"  )
 			}
 			senao{
-				escreva("\nAluno: "+nome[contador] + "\n" + "N1:" + matriz[contador][0] + "\n"
-			+ "Nota2: "+ matriz[contador][1] + "\nSua média foi: " + media + " REPROVADO'"  )
+				escreva("\n\nAluno: "+nome[contador] + "\n" + "N1:" + matriz[contador][0] + "\n"
+			+ "Nota2: "+ matriz[contador][1] + "\nSua média foi: " + media + " -{ REPROVADO }"  )
 			}
 			
 		}
@@ -53,7 +53,7 @@ de tal P1= 8.0, P2=6.0, Media=7.0, aprovado!*/
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1560; 
+ * @POSICAO-CURSOR = 1695; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

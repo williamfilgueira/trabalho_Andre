@@ -8,39 +8,39 @@ deseja calcular outra divisão e caso sua resposta seja positiva limpe a tela e 
 	
 	funcao inicio()
 	{
-		inteiro getResp, contador = 0, n1, n2
-		real media = 0
-
-		faca{
+		inteiro getRsp, n1, n2
+		real media
+		
 			escreva("\n****** EXERCICIO N°1 ******\n")
 			escreva("*****************************")
 			escreva("\nDigite o primeiro número: ")
 			leia(n1)
 			escreva("\nDigite o segundo número: ")
 			leia(n2)
-			se(n2 == 0){
-				escreva("Digite um número acima de 0")
+			enquanto(n2 < 1){
+			escreva("Divisor deve ser maior que 0!\n")
+			escreva("Informe novo divisor: ")
+			leia(n2)
 			}
-			media = n1/n2
-			escreva("A média dos dois números: "+ media)
-			escreva("\nDeseja realizar uma nova operação? SIM(1) NÃO(0)")
-			leia(getResp)	
-			}
-			enquanto(getResp == 1)
+			escreva("A divisão de ", n1, " | ", n2, " = ", n1/n2)
+			escreva("\nDeseja realizar nova operação? 1(SIM) 2(NÃO)")
+			leia(getRsp)
+			//getRsp = t.caixa_baixa(realiza)
+			//opera = t.obter_caracter(realiza, 0)
+			se (getRsp == 1){
 				limpa()
-				escreva("Terminamos por aqui.")
-				
+				inicio()
+		}
 	}
 }
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 409; 
+ * @POSICAO-CURSOR = 838; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {n1, 11, 33, 2}-{n2, 11, 37, 2}-{media, 12, 7, 5};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
